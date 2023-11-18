@@ -134,6 +134,7 @@ public class VideoPlayerPlugin implements FlutterPlugin, AndroidVideoPlayerApi {
       } else {
         assetLookupKey = flutterState.keyForAsset.get(arg.getAsset());
       }
+      Log.d("TAG Video", assetLookupKey);
       player =
           new VideoPlayer(
               flutterState.applicationContext,
